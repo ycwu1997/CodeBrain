@@ -1,0 +1,64 @@
+===== Evaluation Results (Per Pattern) =====
+Pattern [0,1,1]
+  PSNR_list: [tensor(36.8760), None, None]
+  SSIM_list: [tensor(97.8018), None, None]
+  MAE_list : [tensor(7.4387), None, None]
+  Mean_PSNR: 36.8760 (Var: 0.0000)
+  Mean_SSIM: 97.8018 (Var: 0.0000)
+  Mean_MAE : 7.4387 (Var: 0.0000)
+
+Pattern [1,1,0]
+  PSNR_list: [None, None, tensor(38.3889)]
+  SSIM_list: [None, None, tensor(97.6019)]
+  MAE_list : [None, None, tensor(6.9087)]
+  Mean_PSNR: 38.3889 (Var: 0.0000)
+  Mean_SSIM: 97.6019 (Var: 0.0000)
+  Mean_MAE : 6.9087 (Var: 0.0000)
+
+Pattern [1,0,1]
+  PSNR_list: [None, tensor(34.3708), None]
+  SSIM_list: [None, tensor(95.4212), None]
+  MAE_list : [None, tensor(10.8524), None]
+  Mean_PSNR: 34.3708 (Var: 0.0000)
+  Mean_SSIM: 95.4212 (Var: 0.0000)
+  Mean_MAE : 10.8524 (Var: 0.0000)
+
+Pattern [0,0,1]
+  PSNR_list: [tensor(35.9775), tensor(33.4359), None]
+  SSIM_list: [tensor(97.3811), tensor(95.0853), None]
+  MAE_list : [tensor(8.2176), tensor(11.7350), None]
+  Mean_PSNR: 34.7067 (Var: 1.6149)
+  Mean_SSIM: 96.2332 (Var: 1.3177)
+  Mean_MAE : 9.9763 (Var: 3.0929)
+
+Pattern [0,1,0]
+  PSNR_list: [tensor(35.6563), None, tensor(37.3242)]
+  SSIM_list: [tensor(97.2643), None, tensor(97.2916)]
+  MAE_list : [tensor(8.5191), None, tensor(7.6603)]
+  Mean_PSNR: 36.4903 (Var: 0.6955)
+  Mean_SSIM: 97.2780 (Var: 0.0002)
+  Mean_MAE : 8.0897 (Var: 0.1844)
+
+Pattern [1,0,0]
+  PSNR_list: [None, tensor(28.1462), tensor(32.2172)]
+  SSIM_list: [None, tensor(90.9557), tensor(94.2431)]
+  MAE_list : [None, tensor(19.5039), tensor(12.4665)]
+  Mean_PSNR: 30.1817 (Var: 4.1433)
+  Mean_SSIM: 92.5994 (Var: 2.7017)
+  Mean_MAE : 15.9852 (Var: 12.3811)
+
+===== Statistics by Input Number =====
+Single Input (1 input):
+  PSNR: 33.7929 (Var: 9.2018)
+  SSIM: 95.3702 (Var: 5.3604)
+  MAE : 11.3504 (Var: 16.5534)
+
+Multiple Inputs (>1 inputs):
+  PSNR: 36.5452 (Var: 2.7455)
+  SSIM: 96.9416 (Var: 1.1625)
+  MAE : 8.3999 (Var: 3.0541)
+
+===== Overall Average Across All Patterns & Missing Channels =====
+  Overall_PSNR: 34.7103 (Var: 8.7331)
+  Overall_SSIM: 95.8940 (Var: 4.5099)
+  Overall_MAE : 10.3669 (Var: 13.9881)

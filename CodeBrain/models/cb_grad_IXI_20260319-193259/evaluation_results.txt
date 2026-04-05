@@ -1,0 +1,64 @@
+===== Evaluation Results (Per Pattern) =====
+Pattern [0,1,1]
+  PSNR_list: [tensor(29.0899), None, None]
+  SSIM_list: [tensor(94.1113), None, None]
+  MAE_list : [tensor(16.8793), None, None]
+  Mean_PSNR: 29.0899 (Var: 0.0000)
+  Mean_SSIM: 94.1113 (Var: 0.0000)
+  Mean_MAE : 16.8793 (Var: 0.0000)
+
+Pattern [1,1,0]
+  PSNR_list: [None, None, tensor(34.7404)]
+  SSIM_list: [None, None, tensor(96.5078)]
+  MAE_list : [None, None, tensor(10.0900)]
+  Mean_PSNR: 34.7404 (Var: 0.0000)
+  Mean_SSIM: 96.5078 (Var: 0.0000)
+  Mean_MAE : 10.0900 (Var: 0.0000)
+
+Pattern [1,0,1]
+  PSNR_list: [None, tensor(31.3318), None]
+  SSIM_list: [None, tensor(94.2420), None]
+  MAE_list : [None, tensor(14.4999), None]
+  Mean_PSNR: 31.3318 (Var: 0.0000)
+  Mean_SSIM: 94.2420 (Var: 0.0000)
+  Mean_MAE : 14.4999 (Var: 0.0000)
+
+Pattern [0,0,1]
+  PSNR_list: [tensor(28.7164), tensor(30.3591), None]
+  SSIM_list: [tensor(93.6400), tensor(93.8465), None]
+  MAE_list : [tensor(17.6823), tensor(15.6930), None]
+  Mean_PSNR: 29.5378 (Var: 0.6746)
+  Mean_SSIM: 93.7432 (Var: 0.0107)
+  Mean_MAE : 16.6876 (Var: 0.9893)
+
+Pattern [0,1,0]
+  PSNR_list: [tensor(28.2035), None, tensor(33.5694)]
+  SSIM_list: [tensor(93.3485), None, tensor(96.1789)]
+  MAE_list : [tensor(18.8291), None, tensor(11.4069)]
+  Mean_PSNR: 30.8865 (Var: 7.1981)
+  Mean_SSIM: 94.7637 (Var: 2.0028)
+  Mean_MAE : 15.1180 (Var: 13.7723)
+
+Pattern [1,0,0]
+  PSNR_list: [None, tensor(23.8316), tensor(27.2561)]
+  SSIM_list: [None, tensor(85.9546), tensor(89.8590)]
+  MAE_list : [None, tensor(30.2408), tensor(20.9938)]
+  Mean_PSNR: 25.5438 (Var: 2.9319)
+  Mean_SSIM: 87.9068 (Var: 3.8110)
+  Mean_MAE : 25.6173 (Var: 21.3768)
+
+===== Statistics by Input Number =====
+Single Input (1 input):
+  PSNR: 28.6560 (Var: 8.7476)
+  SSIM: 92.1379 (Var: 11.0661)
+  MAE : 19.1410 (Var: 33.4281)
+
+Multiple Inputs (>1 inputs):
+  PSNR: 31.7207 (Var: 5.3968)
+  SSIM: 94.9537 (Var: 1.2104)
+  MAE : 13.8231 (Var: 7.9115)
+
+===== Overall Average Across All Patterns & Missing Channels =====
+  Overall_PSNR: 29.6776 (Var: 9.7178)
+  Overall_SSIM: 93.0765 (Var: 9.5428)
+  Overall_MAE : 17.3683 (Var: 31.2069)
