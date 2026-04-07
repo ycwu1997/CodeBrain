@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "torch.distributed.run",
+            "args": [
+            "--nproc_per_node", "1",
+            "--master_port", "1235",
+            "./train_rec.py",
+            // "train_grad.py",
+            // "--rec_path", "../models/cb_rec_IXI_20250624-185610",
+            "--config", "./configs/params_ixi.yaml",
+            ],
+            "justMyCode": true
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+DATA_PATH: '../../MRI/Brats2023/'
+MODEL_DIR: '../models/'
+DATASET: 'BRATS'
+MODALITY_LIST: ['flair', 't1', 't2', 't1ce']
+VISUALIZE: False
+TEST_SAVE: False
+INPUT_C: 4
+OUTPUT_C: 4
+IMPUTE_LIST: [[0,0,0,1], [0,0,1,0], [0,1,0,0], [1,0,0,0], [0,0,1,1], [0,1,1,0], [0,1,0,1], [1,0,0,1], [1,0,1,0], [1,1,0,0], [1,1,1,0], [1,1,0,1], [1,0,1,1], [0,1,1,1]]
+IMPUTE_VAL_LIST: [[1,0,1,1], [1,1,0,1], [1,1,1,0], [0,1,1,1]]

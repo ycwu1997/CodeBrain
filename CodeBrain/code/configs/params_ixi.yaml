@@ -1,0 +1,10 @@
+DATA_PATH: '../../MRI/IXI/'
+MODEL_DIR: '../models/'
+DATASET: 'IXI'
+MODALITY_LIST: ['T1', 'T2', 'PD']
+VISUALIZE: False
+TEST_SAVE: False
+INPUT_C: 3
+OUTPUT_C: 3
+IMPUTE_LIST: [[0,1,1], [1,1,0], [1,0,1], [0,0,1], [0,1,0], [1,0,0]]
+IMPUTE_VAL_LIST: [[1,1,0], [1,0,1], [0,1,1]]
