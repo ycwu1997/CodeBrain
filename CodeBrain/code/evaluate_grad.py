@@ -29,7 +29,9 @@ def validate_grad(Trainer, val_loader, opt, writer, current_iter):
         PSNR_dict[key] = [0.0]*len(opt.MODALITY_LIST)
         count_dict[key] = [0]*len(opt.MODALITY_LIST)
 
-    Trainer.grad_model.eval()
+    model = Trainer._unwrap_module(Trainer.grad_model)
+    model.eval()
+
     monitor_step = random.randint(0, len(val_loader)-1) # only check one time
     with torch.no_grad():
         for val_step, sample in enumerate(tqdm(val_loader)):
@@ -42,7 +44,7 @@ def validate_grad(Trainer, val_loader, opt, writer, current_iter):
 
                 # Create partial volume by zeroing out missing channels
                 masked_volumes = masking_img(volumes, pattern)
-                out_levels = Trainer.grad_model(masked_volumes)
+                out_levels = model(masked_volumes)
 
                 codes_quant = []
                 for j, o in enumerate(out_levels):

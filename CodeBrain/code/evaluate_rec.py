@@ -26,7 +26,9 @@ def validate_rec(Trainer, val_loader, opt, writer, current_iter):
         PSNR_dict[key] = [0.0]*len(opt.MODALITY_LIST)
         count_dict[key] = [0]*len(opt.MODALITY_LIST)
 
-    Trainer.rec_model.eval()
+    model = Trainer._unwrap_module(Trainer.rec_model)
+    model.eval()
+
     monitor_step = random.randint(0, len(val_loader)-1) # only check one time
     with torch.no_grad():
         for val_step, sample in enumerate(tqdm(val_loader)):
@@ -39,7 +41,7 @@ def validate_rec(Trainer, val_loader, opt, writer, current_iter):
                 
                 # Create partial volume by zeroing out missing channels
                 masked_volumes = masking_img(volumes, pattern)
-                out_volumes, _ = Trainer.rec_model(masked_volumes, volumes)
+                out_volumes, _ = model(masked_volumes, volumes)
 
                 for ch in range(c_modal):
                     if pattern[ch] == 0:  # Only evaluate missing modalities
