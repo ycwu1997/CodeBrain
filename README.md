@@ -10,6 +10,8 @@ by Yicheng Wu*+, Tao Song+, Zhonghua Wu, Jin Ye, Zongyuan Ge, Wenjia Bai, Zhaoli
 ```
 ### Introduction
 
+![](assets/poster.pdf)
+
 This repository is for our paper: "[Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code](https://arxiv.org/pdf/2501.18328)". This work aims to generate pseudo full-stack brain MRI scans from any incomplete ones.
 
 ### Requirements
