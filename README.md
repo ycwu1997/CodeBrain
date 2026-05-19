@@ -3,6 +3,9 @@ by Yicheng Wu*+, Tao Song+, Zhonghua Wu, Jin Ye, Zongyuan Ge, Wenjia Bai, Zhaoli
 
 ### News
 ```
+<19.05.2026> Posters and videos are available;
+```
+```
 <20.03.2026> We released the codes;
 ```
 ```
@@ -12,7 +15,9 @@ by Yicheng Wu*+, Tao Song+, Zhonghua Wu, Jin Ye, Zongyuan Ge, Wenjia Bai, Zhaoli
 
 ![](assets/poster.png)
 
-This repository is for our paper: "[Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code](https://arxiv.org/pdf/2501.18328)". This work aims to generate pseudo full-stack brain MRI scans from any incomplete ones.
+This repository is for our paper: "[Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code](https://arxiv.org/pdf/2501.18328)", the video introduction can be found at [YouTube](https://www.youtube.com/watch?v=oHKOVApCouk&t=3s) platform.
+
+This work aims to generate virtual full-stack brain MRI scans from any incomplete input. Here, the complete brain MRI modality set can be represented as region-level quantised codes, so that diverse "Any-to-Any" imputation tasks can be transformed from pixel-level synthesis into a unified latent code prediction.
 
 ### Requirements
 All experiments in our paper were conducted on eight NVIDIA GeForce 4090 GPUs. This repository is based on PyTorch 2.9.1+cu128 and Python 3.12.12. We further validate this repository via a single NVIDIA GeForce 5090 GPU. The performance is slightly higher than the reported ones. Check ./CodeBrain/models/ for more details.
