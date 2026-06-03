@@ -15,7 +15,7 @@ by Yicheng Wu*+, Tao Song+, Zhonghua Wu, Jin Ye, Zongyuan Ge, Wenjia Bai, Zhaoli
 
 ![](assets/poster.png)
 
-This repository is for our paper: "[Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code](https://arxiv.org/pdf/2501.18328)", the video introduction can be found at [YouTube](https://www.youtube.com/watch?v=oHKOVApCouk&t=3s) platform.
+This repository is for our paper: "[Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code](https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_Virtual_Full-stack_Scanning_of_Brain_MRI_via_Imputing_Any_Quantised_CVPR_2026_paper.pdf)", the video introduction can be found at [YouTube](https://www.youtube.com/watch?v=oHKOVApCouk&t=3s) platform.
 
 This work aims to generate virtual full-stack brain MRI scans from any incomplete input. Here, the complete brain MRI modality set can be represented as region-level quantised codes, so that diverse "Any-to-Any" imputation tasks can be transformed from pixel-level synthesis into a unified latent code prediction.
 
