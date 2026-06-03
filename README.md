@@ -48,7 +48,9 @@ If our CodeBrain model is useful for your research, please consider citing:
         author    = {Wu, Yicheng and Song, Tao and Wu, Zhonghua and Ye, Jin and Ge, Zongyuan and Bai, Wenjia and Chen, Zhaolin and Cai, Jianfei},
         title     = {Virtual Full-stack Scanning of Brain MRI via Imputing Any Quantised Code},
         booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year      = {2026}
+        month     = {June},
+        year      = {2026},
+        pages     = {21026-21035}
     }
 
 ### Acknowledgments:
